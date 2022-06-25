@@ -10,17 +10,15 @@
     <title>Teste Django</title>
 </head>
 <body>
-    <h1>Listagem</h1>
+    <h1 class="titulo">Listagem</h1>
         {% for produto in produtos %}
-            <div>
-                <ul class="produtos">
-                    <li><b>{{ produto.nome }}</b></li>
-                    <li>R$ {{ produto.preco }}</li>
-                    <li>{{ produto.descricao }}</li>
-                </ul>
-            </div>
+            <section class="produtos">
+                    <a href="{% url 'url_update' produto.id %}"><div class='produto_name'>{{ produto.nome }}</div></a>
+                    <p>R$ {{ produto.preco }}</p>
+                    <p>{{ produto.descricao }}</p>
+            </section>
         {% endfor%}
-    <img src="{% static 'imagem.jpg' %}">
-    <a href="{% url 'url_cadastrar_produto' %}">Cadastrar</a>
+    <a class='btn_cadastrar' href="{% url 'url_cadastrar_produto' %}">Cadastrar Novo Produto</a>
+    <img class='imagem' src="{% static 'imagem.jpg' %}">
 </body>
 </html>

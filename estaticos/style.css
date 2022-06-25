@@ -1,4 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    text-align: center;
+}
+
 .produtos {
-    list-style-type: none;
+    display: inline-block;
+    width: 300px;
     padding: 0px 0px;
+    margin: 0px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 30px;
+
+}
+
+.produto_name {
+    color: #000000;
+    font-weight: bold;
+    border: solid 1px black;
+    padding: 4px;
+}
+
+
+.produto_name:hover {
+    background-color:  #e0e3de;
+}
+
+.btn_cadastrar {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    width: 150px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #0588b0;
+}
+
+.btn_cadastrar:hover {
+    background-color: #025c78;
+}
+
+.imagem {
+    display: block;
 }
